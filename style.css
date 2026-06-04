@@ -165,3 +165,25 @@ h2{
     }
 
 }
+
+@media (max-width: 600px){
+
+    h1{
+        font-size:50px;
+    }
+
+    .button{
+        font-size:22px;
+        padding:20px;
+    }
+
+    .button i{
+        width:70px;
+        font-size:45px;
+    }
+
+    .bio{
+        font-size:18px;
+    }
+
+}
