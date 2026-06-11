@@ -1,313 +1,69 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LokiStore</title>
+<title>blackwhite_diesel</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI,sans-serif;
-    scroll-behavior:smooth;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-    background:#0A0A0A;
-    color:white;
-}
-
-.hero img{
-    width:100%;
-    height:400px;
-    object-fit:cover;
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
-}
-
-.card{
-    background:#141414;
-    border:1px solid #FFD700;
-    border-radius:15px;
-    padding:20px;
-    margin-top:20px;
-}
-
-.btn{
-    display:block;
-    width:100%;
-    text-align:center;
-    padding:15px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-top:15px;
-    cursor:pointer;
-    border:none;
-    transition:.2s;
-}
-
-.btn:hover{
-    transform:translateY(-2px);
-}
-
-.yellow{
-    background:#FFD700;
-    color:black;
-}
-
-.gray{
-    background:#222;
-    color:white;
-}
-
-.online{
-    background:#0f2412;
-    border:1px solid #4cff67;
-    color:#4cff67;
-    padding:15px;
-    border-radius:10px;
-    margin-top:15px;
-}
-
-.offline{
-    background:#241818;
-    border:1px solid #ff6868;
-    color:#ff6868;
-    padding:15px;
-    border-radius:10px;
-    margin-top:15px;
-}
-
-.popup{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.85);
-    display:none;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-.popup-box{
-    background:#141414;
-    border:1px solid #FFD700;
-    border-radius:15px;
-    padding:25px;
-    max-width:500px;
-    width:100%;
-    text-align:center;
-}
-
-.close{
-    background:#FFD700;
-    color:black;
-    border:none;
-    border-radius:10px;
-    padding:15px;
-    width:100%;
-    margin-top:15px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    opacity:.7;
-}
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-<section class="hero">
-    <img src="banner.png" alt="Banner LokiStore">
-</section>
+<div class="background-image"></div>
+
+<div class="overlay"></div>
 
 <div class="container">
 
-<div class="card">
+```
+<img src="avatar.jpeg" class="avatar">
 
-<h1>🖤💛 LokiStore</h1>
+<h1>blackwhite_diesel</h1>
 
-<br>
+<p class="bio">halo semua 👋😘</p>
 
-<p>
-Spesialis Akun CDID Indonesia
-<br><br>
-⚡ Pengiriman Cepat • 🛡️ Full Garansi • 🤝 Pelayanan Terbaik
-<br><br>
+<div class="mini-icons">
 
-<p style="opacity:0.85;line-height:1.8;">
-Selamat datang di LokiStore, tempat terbaik untuk mencari akun
-Car Driving Indonesia (CDID) dengan proses yang cepat, aman,
-dan mudah. Kami menyediakan layanan yang sederhana tanpa proses
-yang membingungkan. Cukup hubungi admin, lihat stok yang tersedia,
-dan pilih akun yang sesuai dengan kebutuhan Anda.
-</p>
+    <a href="https://www.instagram.com/blackwhite_diesel?igsh=MndyY2ZhdTk5M2k4&utm_source=qr" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
 
+    <a href="https://www.tiktok.com/@blackwhite_diesel?_r=1&_t=ZS-96vES9gMSFo" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
 
 </div>
 
-<section id="order">
+<hr>
 
-<div class="card">
+<h2>MENU</h2>
 
-<h2>⚠️ Informasi</h2>
-
-<br>
-
-<p>
-Karena stok akun CDID selalu berubah setiap saat,
-admin tidak dapat menampilkan seluruh akun yang tersedia di website.
-<br><br>
-Untuk melihat akun yang tersedia saat ini beserta spesifikasinya,
-silakan pilih salah satu opsi di bawah ini.
-</p>
-
-<a href="#admin" class="btn yellow">
-🟢 Order Sekarang
+<a href="social.html" class="button">
+    <i class="fa-solid fa-globe"></i>
+    <span>Social Media</span>
 </a>
 
-<button onclick="bukaPopup()" class="btn gray">
-🚫 Engga dulu deh
-</button>
-
-</div>
-
-</section>
-<div class="card">
-
-<h2>🖤 Tentang LokiStore</h2>
-
-<br>
-
-<p>
-<p>
-LokiStore merupakan platform yang berfokus pada penyediaan akun Car Driving Indonesia (CDID) dengan pelayanan yang cepat, aman, dan terpercaya. Kami hadir untuk membantu para pemain mendapatkan akun yang sesuai dengan kebutuhan mereka melalui proses yang sederhana, jelas, dan mudah dipahami. Sejak awal berdiri, LokiStore memiliki tujuan untuk memberikan pengalaman transaksi yang nyaman bagi seluruh pelanggan tanpa prosedur yang rumit maupun membingungkan.
-</p>
-
-<p>
-Kami memahami bahwa setiap pemain memiliki tujuan bermain yang berbeda. Sebagian pemain mencari akun dengan koleksi kendaraan yang lengkap, sebagian lainnya menginginkan akun dengan progres permainan yang tinggi, dan tidak sedikit pula yang mencari akun untuk langsung menikmati berbagai fitur yang tersedia tanpa harus memulai dari awal. Oleh karena itu, LokiStore berusaha memberikan pelayanan yang fleksibel agar setiap pelanggan dapat menemukan akun yang sesuai dengan kebutuhan dan preferensi mereka.
-</p>
-
-<p>
-Dalam dunia jual beli akun game, kejelasan informasi merupakan salah satu hal yang paling penting. Karena itu, kami selalu berusaha memberikan informasi yang transparan mengenai akun yang tersedia. Pelanggan dapat menghubungi admin secara langsung untuk memperoleh informasi terbaru mengenai spesifikasi akun, kendaraan yang dimiliki, jumlah uang dalam permainan, aset yang tersedia, serta berbagai detail lainnya yang diperlukan sebelum melakukan pembelian.
-</p>
-
-<p>
-LokiStore tidak menampilkan seluruh akun secara langsung di website karena stok dapat berubah sewaktu-waktu. Dengan sistem ini, pelanggan dapat memperoleh informasi yang lebih akurat dan terkini dibandingkan daftar akun yang jarang diperbarui. Kami percaya bahwa memberikan informasi secara langsung merupakan cara terbaik untuk memastikan pelanggan memperoleh data yang benar dan sesuai dengan kondisi stok yang tersedia saat itu.
-</p>
-
-<p>
-Kami juga memahami bahwa kepercayaan merupakan hal yang sangat penting dalam setiap transaksi digital. Oleh karena itu, kami selalu berusaha memberikan pelayanan yang jujur, ramah, dan profesional kepada seluruh pelanggan. Setiap pertanyaan akan dijawab dengan sebaik mungkin selama jam operasional berlangsung sehingga pelanggan dapat merasa lebih nyaman sebelum melakukan transaksi.
-</p>
-</p>
-
-</div>
-<section id="admin">
-
-<div class="card">
-
-<h2>👥 Pilih Admin</h2>
-
-<p>
-Silakan pilih admin yang ingin Anda hubungi.
-</p>
-
-<div id="status"></div>
-
-<a
-class="btn yellow"
-href="https://wa.me/6282210343615?text=Halo%20Admin%201%20LokiStore%20👋%20Saya%20ingin%20melihat%20akun%20CDID%20yang%20tersedia."
-target="_blank">
-📱 Chat Admin 1
+<a href="contact.html" class="button">
+    <i class="fa-solid fa-headset"></i>
+    <span>Contact & Support</span>
 </a>
 
-<a
-class="btn yellow"
-href="https://wa.me/62895366922727?text=Halo%20Admin%202%20LokiStore%20👋%20Saya%20ingin%20melihat%20akun%20CDID%20yang%20tersedia."
-target="_blank">
-📱 Chat Admin 2
-</a>
+<hr>
+
+<div class="footer">
+    Website by blackwhite_diesel's design<br>
+    © 2026 All Rights Reserved
+</div>
+```
 
 </div>
 
-</section>
-
-</div>
-
-<footer>
-© 2026 LokiStore • Spesialis Akun CDID Indonesia
-</footer>
-
-<div class="popup" id="popup">
-
-<div class="popup-box">
-
-<h2>👋🏻 Selamat tinggal!</h2>
-
-<br>
-
-<p>
-Semoga harimu menyenangkan 😄
-<br><br>
-Kalau nanti kepikiran beli akun CDID,
-LokiStore masih di sini kok 🙏🚗
-</p>
-
-<button class="close" onclick="tutupPopup()">
-🏠 Kembali
-</button>
-
-</div>
-
-</div>
-
-<script>
-
-function bukaPopup(){
-    document.getElementById("popup").style.display="flex";
-}
-
-function tutupPopup(){
-    document.getElementById("popup").style.display="none";
-}
-
-const jam = new Date().getHours();
-
-if(jam >= 9 && jam < 21){
-
-document.getElementById("status").innerHTML=`
-<div class="online">
-🟢 Admin Sedang Online<br>
-Jam Operasional: 09:00 - 21:00 WIB
-</div>
-`;
-
-}else{
-
-document.getElementById("status").innerHTML=`
-<div class="offline">
-😴 Admin Sedang Offline<br>
-Jam Operasional: 09:00 - 21:00 WIB
-<br><br>
-Pesan tetap dapat dikirim dan akan dibalas saat admin online.
-</div>
-`;
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
