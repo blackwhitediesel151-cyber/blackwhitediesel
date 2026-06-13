@@ -184,8 +184,16 @@ container{
 }
 
 h1{
-    font-size:clamp(34px,9vw,50px);
-    line-height:1.1;
+    font-size:clamp(40px,6vw,72px);
+    font-weight:700;
+    word-break:break-word;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,.4),
+        0 0 20px rgba(255,255,255,.2),
+        0 0 30px rgba(0,0,0,.8);
+
+    animation:titleGlow 3s ease-in-out infinite;
 }
 
 .bio{
@@ -228,6 +236,22 @@ h1{
         box-shadow:
             0 0 40px rgba(255,255,255,.8),
             0 0 80px rgba(255,255,255,.4);
+    }
+}
+
+@keyframes titleGlow{
+    0%,100%{
+        text-shadow:
+            0 0 10px rgba(255,255,255,.4),
+            0 0 20px rgba(255,255,255,.2),
+            0 0 30px rgba(0,0,0,.8);
+    }
+
+    50%{
+        text-shadow:
+            0 0 15px rgba(255,255,255,.8),
+            0 0 30px rgba(255,255,255,.4),
+            0 0 40px rgba(0,0,0,.8);
     }
 }
 
