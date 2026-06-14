@@ -140,11 +140,47 @@ text-align:center;
     text-shadow:0 0 10px rgba(0,0,0,.8);
 }
 
-@media (max-width:768px){}
+@media (max-width:768px){
 
-container{
-    width:95%;
-    padding-top:60px;
+    .container{
+        width:95%;
+        padding:25px 12px;
+    }
+
+    .avatar{
+        width:90px;
+        height:90px;
+    }
+
+    h1{
+        font-size:28px;
+        line-height:1.2;
+        word-break:break-word;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    .bio{
+        font-size:15px;
+    }
+
+    .mini-icons a{
+        font-size:30px;
+        margin:0 10px;
+    }
+
+    .button{
+    padding:10px 12px;
+    font-size:15px;
+    }
+
+    .info-box{
+        padding:20px;
+        font-size:14px;
+    }
+
 }
 
 .avatar{
