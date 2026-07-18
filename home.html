@@ -1,44 +1,71 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090a0b">
-  <title>Blackwhite Diesel — Automotive Identity</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#090a0b" name="theme-color"/>
+<title>Blackwhite Diesel — Automotive Identity</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<style>
+.email-pill{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+height:34px;
+padding:0 14px;
+margin-left:8px;
+border:1px solid rgba(255,255,255,.16);
+border-radius:999px;
+background:rgba(255,255,255,.07);
+backdrop-filter:blur(16px);
+color:#fff;
+text-decoration:none;
+font-size:11px;
+font-weight:600;
+letter-spacing:.03em;
+transition:.3s ease;
+white-space:nowrap;
+}
+.email-pill:hover{
+background:rgba(255,255,255,.14);
+border-color:rgba(255,255,255,.3);
+transform:translateY(-2px);
+}
+</style></head>
 <body>
-  <div class="background-image"></div><div class="overlay"></div><div class="grain"></div>
-  <header class="topbar">
-    <a class="brand" href="home.html"><span class="brand-mark"></span>Blackwhite Diesel</a>
-    <nav class="nav-links" aria-label="Navigasi utama">
-      <a class="active" href="home.html">Home</a><a href="about.html">About</a><a href="social.html">Social</a><a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main class="page home-page">
-    <section class="hero">
-      <div class="avatar-wrap reveal"><img src="avatar.jpeg" class="avatar" alt="Toyota Innova Blackwhite Diesel"></div>
-      <p class="eyebrow reveal">Diesel · Automotive · Indonesia</p>
-      <h1 class="reveal">blackwhite_<em>diesel</em></h1>
-      <p class="hero-copy reveal">Sebuah identitas otomotif yang lahir dari dua warna, dua perjalanan, dan satu kecintaan pada mesin diesel.</p>
-
-      <div class="social-pills reveal">
-        <a href="https://www.instagram.com/blackwhite_diesel?igsh=MndyY2ZhdTk5M2k4&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@blackwhite_diesel?_r=1&_t=ZS-96vES9gMSFo" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-      </div>
-
-      <div class="menu-label reveal">Explore</div>
-      <div class="link-stack">
-        <a href="about.html" class="button reveal"><i class="fa-regular fa-circle-question"></i><span>About the identity</span><i class="fa-solid fa-arrow-right arrow"></i></a>
-        <a href="social.html" class="button reveal"><i class="fa-solid fa-globe"></i><span>Social media</span><i class="fa-solid fa-arrow-right arrow"></i></a>
-        <a href="contact.html" class="button reveal"><i class="fa-regular fa-comments"></i><span>Contact & support</span><i class="fa-solid fa-arrow-right arrow"></i></a>
-        <a href="faq.html" class="button reveal"><i class="fa-regular fa-message"></i><span>Frequently asked</span><i class="fa-solid fa-arrow-right arrow"></i></a>
-      </div>
-      <footer class="footer reveal">Designed by Blackwhite Diesel<br>© 2026 All Rights Reserved</footer>
-    </section>
-  </main>
-  <script src="script.js"></script>
+<div class="background-image"></div><div class="overlay"></div><div class="grain"></div>
+<header class="topbar">
+<a class="brand" href="home.html"><span class="brand-mark"></span>Blackwhite Diesel</a>
+<nav aria-label="Navigasi utama" class="nav-links">
+<a class="active" href="home.html">Home</a><a href="about.html">About</a><a href="social.html">Social</a><a href="contact.html">Contact</a>
+</nav>
+</header>
+<main class="page home-page">
+<section class="hero">
+<div class="avatar-wrap reveal"><img alt="Toyota Innova Blackwhite Diesel" class="avatar" src="avatar.jpeg"/></div>
+<p class="eyebrow reveal">Diesel · Automotive · Indonesia</p>
+<h1 class="reveal">blackwhite_<em>diesel</em></h1>
+<p class="hero-copy reveal">Sebuah identitas otomotif yang lahir dari dua warna, dua perjalanan, dan satu kecintaan pada mesin diesel.</p>
+<div class="social-pills reveal">
+<a aria-label="Instagram" href="https://www.instagram.com/blackwhite_diesel?igsh=MndyY2ZhdTk5M2k4&amp;utm_source=qr" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="TikTok" href="https://www.tiktok.com/@blackwhite_diesel?_r=1&amp;_t=ZS-96vES9gMSFo" rel="noopener" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+<a class="email-pill" href="mailto:masbw@inibw.id">masbw@inibw.id</a></div>
+<div class="menu-label reveal">Explore</div>
+<div class="visitor-pill reveal">
+    <i class="fa-regular fa-eye"></i>
+    <span id="visitor-count">Loading...</span>
+</div>
+<div class="link-stack">
+<a class="button reveal" href="about.html"><i class="fa-regular fa-circle-question"></i><span>About the identity</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+<a class="button reveal" href="social.html"><i class="fa-solid fa-globe"></i><span>Social media</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+<a class="button reveal" href="contact.html"><i class="fa-regular fa-comments"></i><span>Contact &amp; support</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+<a class="button reveal" href="faq.html"><i class="fa-regular fa-message"></i><span>Frequently asked</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+<a class="button reveal" href="https://gabut.blackwhitediesel.my.id" rel="noopener" target="_blank"><i class="fa-solid fa-laptop-code"></i><span>Project Gabut Si Owner</span><i class="fa-solid fa-arrow-right arrow"></i></a></div>
+<footer class="footer reveal">Designed by Blackwhite Diesel<br/>© 2026 All Rights Reserved</footer>
+</section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>

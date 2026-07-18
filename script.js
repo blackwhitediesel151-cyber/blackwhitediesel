@@ -8,6 +8,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const namespace = "blackwhitediesel";
+  const key = "home";
+
+  fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+    .then(res => res.json())
+    .then(data => {
+      const visitorCount = document.getElementById("visitor-count");
+      if (visitorCount) {
+        visitorCount.textContent = `${data.value.toLocaleString()} Visitors`;
+      }
+    })
+    .catch(() => {
+      const visitorCount = document.getElementById("visitor-count");
+      if (visitorCount) {
+        visitorCount.textContent = "Visitor Counter";
+      }
+    });
+
   // Premium accordion interaction for FAQ.
   document.querySelectorAll(".faq-question").forEach(button => {
     button.addEventListener("click", () => {
